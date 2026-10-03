@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Profile{% endblock %}
+{% block css %}
+<link rel='stylesheet' href='../static/css/profile.css'>
+{% endblock %}
+
+{% block content %}
+<div class="card shadow mx-auto" id="profile-card">
+    <div class="card-header text-center" id="profile-header">
+        <h1>Profile</h1>
+    </div>
+    <ul class="list-group list-group-flush">
+        {% for i in user if i != 'pin' and i != 'history' %}
+        <li class="list-group-item">
+            <span class="profile-key">{{i}}:</span> {{user[i]}}
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

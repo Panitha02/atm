@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}OTP Verification{% endblock %}
+{% block css %}
+<link rel='stylesheet' href='../static/css/verify.css'>
+{% endblock %}
+
+{% block content %}
+<div class="card shadow mx-auto" id="verify-card">
+    <div class="card-body">
+        <h1 class="text-center mb-4" id="verify-title">OTP Verification</h1>
+
+        <form method="post">
+            <div class="mb-3">
+                <label class="form-label">Enter the otp</label>
+                <input type="text" name="otp" class="form-control" id="otp-input">
+            </div>
+            <input type="submit" value="Verify" class="btn w-100" id="verify-btn">
+        </form>
+
+        {% if info %}
+        <div class="alert alert-info text-center mt-3">{{info}}</div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

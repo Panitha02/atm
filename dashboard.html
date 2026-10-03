@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+{% block css %}
+<link rel='stylesheet' href='../static/css/dashboard.css'>
+{% endblock %}
+
+{% block content %}
+<h1 class="text-center" id="welcome">Welcome to the ATM</h1>
+<p class="text-center mb-5">Hello {{session['name']}}, choose an option</p>
+
+<div class="row">
+    <div class="col-md-3 mb-4">
+        <a href="/checkbalance" class="card shadow text-center menu-card">
+            <div class="card-body">Check Balance</div>
+        </a>
+    </div>
+    <div class="col-md-3 mb-4">
+        <a href="/deposit" class="card shadow text-center menu-card">
+            <div class="card-body">Deposit</div>
+        </a>
+    </div>
+    <div class="col-md-3 mb-4">
+        <a href="/withdraw" class="card shadow text-center menu-card">
+            <div class="card-body">Withdraw</div>
+        </a>
+    </div>
+    <div class="col-md-3 mb-4">
+        <a href="/viewtransactions" class="card shadow text-center menu-card">
+            <div class="card-body">View Transactions</div>
+        </a>
+    </div>
+</div>
+{% endblock %}

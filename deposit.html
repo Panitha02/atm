@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Deposit{% endblock %}
+{% block css %}
+<link rel='stylesheet' href='../static/css/deposit.css'>
+{% endblock %}
+
+{% block content %}
+<div class="card shadow mx-auto" id="deposit-card">
+    <div class="card-body">
+        <h1 class="text-center mb-4" id="deposit-title">Deposit</h1>
+
+        <form method="post">
+            <div class="mb-3">
+                <label class="form-label">Enter the amount</label>
+                <input type="text" name="amount" class="form-control">
+            </div>
+            <input type="submit" value="Deposit" class="btn btn-success w-100" id="deposit-btn">
+        </form>
+
+        {% if info %}
+        <div class="alert alert-danger text-center mt-3">{{info}}</div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

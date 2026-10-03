@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Reset Pin{% endblock %}
+{% block css %}
+<link rel='stylesheet' href='../static/css/resetpin.css'>
+{% endblock %}
+
+{% block content %}
+<div class="card shadow mx-auto" id="reset-card">
+    <div class="card-body">
+        <h1 class="text-center mb-4" id="reset-title">Reset Pin</h1>
+
+        <form method="post">
+            <div class="mb-3">
+                <label class="form-label">Enter the pin</label>
+                <input type="password" name="npin" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Confirm the pin</label>
+                <input type="password" name="cpin" class="form-control">
+            </div>
+            <input type="submit" value="Reset" class="btn w-100" id="reset-btn">
+        </form>
+
+        {% if info %}
+        <div class="alert alert-info text-center mt-3">{{info}}</div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

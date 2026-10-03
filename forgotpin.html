@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Forgot Pin{% endblock %}
+{% block css %}
+<link rel='stylesheet' href='../static/css/forgotpin.css'>
+{% endblock %}
+
+{% block content %}
+<div class="card shadow mx-auto" id="forgot-card">
+    <div class="card-body">
+        <h1 class="text-center mb-4" id="forgot-title">Forgot Pin</h1>
+
+        <form method="post">
+            <div class="mb-3">
+                <label class="form-label">Enter the mail</label>
+                <input type="email" name="email" class="form-control">
+            </div>
+            <input type="submit" value="Send Email" class="btn w-100" id="forgot-btn">
+        </form>
+
+        {% if info %}
+        <div class="alert alert-info text-center mt-3">{{info}}</div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

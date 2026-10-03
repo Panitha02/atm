@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Check Balance{% endblock %}
+{% block css %}
+<link rel='stylesheet' href='../static/css/checkbalance.css'>
+{% endblock %}
+
+{% block content %}
+<div class="card shadow mx-auto text-center" id="balance-card">
+    <div class="card-body">
+        <h1 class="mb-4" id="balance-title">Check Balance</h1>
+        <p>Hello {{session['name']}},</p>
+        <p>Your Current balance is</p>
+        <h2 id="balance-amount">{{balance}}/-</h2>
+        <a href="/dashboard" class="btn btn-primary mt-3">Back to Home</a>
+    </div>
+</div>
+{% endblock %}
