@@ -1,0 +1,9 @@
+#deposit-card {
+    width: 400px;
+    border-radius: 10px;
+    border-top: 5px solid green;
+}
+
+#deposit-title {
+    color: green;
+}

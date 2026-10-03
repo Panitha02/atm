@@ -1,0 +1,14 @@
+#profile-card {
+    width: 450px;
+    border-radius: 10px;
+}
+
+#profile-header {
+    background-color: #1e3a8a;
+    color: white;
+}
+
+.profile-key {
+    font-weight: bold;
+    text-transform: capitalize;
+}

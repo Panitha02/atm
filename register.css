@@ -1,0 +1,13 @@
+#register-card {
+    width: 400px;
+    border-radius: 10px;
+}
+
+#register-title {
+    color: #1e3a8a;
+}
+
+#register-btn {
+    background-color: #1e3a8a;
+    color: white;
+}

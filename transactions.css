@@ -1,0 +1,12 @@
+#history-title {
+    color: #1e3a8a;
+}
+
+#history-table {
+    width: 60%;
+}
+
+#history-table th {
+    background-color: #1e3a8a;
+    color: white;
+}

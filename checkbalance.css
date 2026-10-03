@@ -1,0 +1,13 @@
+#balance-card {
+    width: 400px;
+    border-radius: 10px;
+}
+
+#balance-title {
+    color: #1e3a8a;
+}
+
+#balance-amount {
+    color: green;
+    font-size: 40px;
+}

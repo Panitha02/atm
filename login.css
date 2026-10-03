@@ -1,0 +1,13 @@
+#login-card {
+    width: 400px;
+    border-radius: 10px;
+}
+
+#login-title {
+    color: #1e3a8a;
+}
+
+#login-btn {
+    background-color: #1e3a8a;
+    color: white;
+}

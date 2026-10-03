@@ -1,0 +1,9 @@
+#withdraw-card {
+    width: 400px;
+    border-radius: 10px;
+    border-top: 5px solid red;
+}
+
+#withdraw-title {
+    color: red;
+}

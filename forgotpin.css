@@ -1,0 +1,13 @@
+#forgot-card {
+    width: 400px;
+    border-radius: 10px;
+}
+
+#forgot-title {
+    color: #1e3a8a;
+}
+
+#forgot-btn {
+    background-color: #1e3a8a;
+    color: white;
+}
